@@ -1,0 +1,191 @@
+/****** Content ******/
+
+html, body{
+    height: 100%;
+}
+
+.content {
+    max-width: 600px;
+    height: 100%;
+    margin:  0 auto;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+/***** Base *****/
+
+.container {
+    max-width: 600px;
+    margin:  0 auto;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.main-header img {
+    width: 50px;
+}
+
+.container .main-header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.container .main-header h1{
+    margin-left: 20px;
+}
+
+/****** Post ******/
+
+.post_form {
+    padding:  20px 40px; 
+    border-bottom: 1px solid #ccc; 
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    gap: 1rem;
+}
+.post_form .logo{
+    width: 4vw;
+}
+
+.post_form .logo img {
+    width: 4vw; 
+}
+
+.post_form .typename{
+    border: 0px;
+    width: 100%;
+    background: #e6fef7;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.post_form textarea{
+    border: 0px;
+    padding-top: 1rem;
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+.post_form #name{
+    width: 100%;
+    border: none;
+    height: 5vh;
+    background-color:pink;
+}
+.post_form #post{
+    width: 9vw;
+    height: 5vh;
+    background-color: plum;
+    border: none;
+    border-radius: 1rem;
+    float: right; 
+}
+
+.posts ul {
+    padding: 0;
+}
+.posts li {
+    position: relative;
+    display: flex;
+    border-bottom:  1px solid #ccc;
+    padding: 17px;
+    list-style: none;
+}
+
+.posts li .menu_icon {
+    width: 20px;
+    position: absolute;
+    right: 30px;
+    top: 18px;
+}
+
+.posts li .menu{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 3px;
+
+}
+
+.posts li .menu a {
+    text-decoration: none;
+}
+
+.posts li .logo {
+    flex-basis:  15%;
+}
+
+.posts li .logo img {
+    width: 60%; 
+}
+
+.posts li .main_body{
+    flex-basis: 85%;
+}
+
+.posts li .main_body .name{
+    font-weight: bold;
+}
+
+.posts li .main_body .datetime{
+    color: gray;
+}
+
+.posts #heart{
+    width: 3vw;
+}
+
+.posts form{
+    float: bottom;
+}
+.posts .main_body .body-image{
+        width: 80%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        margin-right: 5px;
+        border: 1px solid rgb(197, 199, 201);
+}
+
+.content .post_form form .buttons{
+    margin-top: 1rem;
+}
+
+
+.post_form #cancel {
+    text-decoration: none;
+    border: 1px solid;
+    padding: 6px;
+    background-color: gray;
+    color: #ccc;
+    border-radius: 10px;
+  }
+
+.post_form #update {
+    text-decoration: none;
+    border: 1px solid;
+    padding: 4px;
+    background-color: rgb(29, 161, 242);
+    color: #ccc;
+    border-radius: 10px;
+    margin-left: 2rem;
+  }
+
+@media screen and (max-width: 500px) {
+    .posts li .main_body .name{
+        font-size: 20px;
+    }
+}
+
+
